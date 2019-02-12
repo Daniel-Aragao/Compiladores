@@ -27,6 +27,7 @@ if( __name__ == "__main__"):
             sb = SBuilder(graph)
             matrix = sb.build()
 
+            print(entry)
             printer.printMinimunMatrix(matrix)
 
             line = file_obj.readline()

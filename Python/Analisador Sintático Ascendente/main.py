@@ -8,8 +8,8 @@ from Core.Services.SubsetsBuilder import Builder as SubsetBuilder
 import printer as PRINTER
 
 
-input_file_directory = "Analisador Sintático Ascendente/misc/inputs/input "
-grammar_file_directory = "Analisador Sintático Ascendente/misc/grammars/Gramática "
+input_file_directory = "misc/inputs/input "
+grammar_file_directory = "misc/grammars/Gramática "
 
 grammar_name = "EABCD"
 grammar_name = "EB"
@@ -45,7 +45,7 @@ with io.open(grammar_file_name, "r", encoding='utf8') as file_obj:
     PRINTER.printSubsets(tservice.subset_builder.subsets)
     # PRINTER.printSubsetMatrix(tservice.subset_builder.matrix)
     PRINTER.printSintaticTable(tservice)
-    PRINTER.printMatplotlib(tservice.item_graph)
+    # PRINTER.printMatplotlib(tservice.item_graph)
 
 with io.open(input_file_name, "r", encoding='utf8') as file_obj:
     fileTxt = file_obj.read()
